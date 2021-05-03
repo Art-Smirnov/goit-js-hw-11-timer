@@ -1,16 +1,9 @@
-// const refs = {
-//   daysFace: document.querySelector('span[data-value="days"]'),
-//   hoursFace: document.querySelector('span[data-value="hours"]'),
-//   minsFace: document.querySelector('span[data-value="mins"]'),
-//   secsFace: document.querySelector('span[data-value="secs"]'),
-// };
+//варіант що робиои на практиці
 
 class CountdownTimer {
   constructor({ selector, targetDate, onTick }) {
     this.selector = selector;
     this.targetDate = targetDate;
-    this.onTick = onTick;
-    this.start();
   }
 
   timer() {
@@ -42,7 +35,10 @@ const timer = new CountdownTimer({
   selector: '#timer-1',
   targetDate: new Date('Jul 17, 2021'),
 });
+
 timer.start();
+
+//мій варіант
 
 // const refs = {
 //   daysFace: document.querySelector('span[data-value="days"]'),
